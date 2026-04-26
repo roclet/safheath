@@ -784,15 +784,16 @@ banner
 }
 
 .slide-inner .header-text .buttons {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
   opacity: 1;
   visibility: visible;
 }
 
 .slide-inner .header-text .buttons .green-button {
   display: inline;
-  float: left;
-  margin-right: 20px;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1742,10 +1743,8 @@ body {
     margin-right: auto;
   }
   .slide-inner .header-text .buttons {
-    display: inline-flex;
-  }
-  .slide-inner .header-text .buttons .green-button {
-    float: none;
+    display: flex;
+    flex-wrap: wrap;
   }
   .services .service-item i {
     margin-bottom: 35px;
