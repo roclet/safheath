@@ -1,0 +1,40 @@
+<form [formGroup]="donationForm" (ngSubmit)="submitForm()">
+  
+
+  <!-- Hidden Reference Field -->
+  <input type="hidden" formControlName="reference">
+<div *ngIf="showRecurringOptions">
+<!-- Donation Purpose -->
+  <label for="item_name">Donation for:</label>
+  <select id="item_name" formControlName="item_name">
+    <option value="Safthealth">Safthealth</option>
+    <option value="TBL Add Value">TBL Add Value</option>
+  </select>
+<!-- Donation Period -->
+  <label for="subscription_type">Donation Period:</label>
+  <select id="subscription_type" formControlName="subscription_type">
+    <option value="0">One-Time</option>
+    <option value="1">Recurring (Monthly)</option>
+  </select>
+</div>
+  
+
+  <!-- Recurring Options (Shown When Recurring is Selected) -->
+  <div *ngIf="showRecurringOptions">
+    <label for="recurring_amount">Recurring Amount:</label>
+    <input type="number" id="recurring_amount" formControlName="recurring_amount">
+
+    <label for="cycles">Number of Cycles:</label>
+    <input type="number" id="cycles" formControlName="cycles">
+
+    <label for="frequency">Billing Frequency (Months):</label>
+    <input type="number" id="frequency" formControlName="frequency">
+    <!-- Donation Amount -->
+    <label for="amount">Amount:</label>
+  <input type="number" id="amount" formControlName="amount">
+  </div>
+<button type="button" class="donate-btn" (click)="openDialog()">Donate Now</button>
+  <!-- Pay Button -->
+  <!--<button type="submit" class="donate-btn" (click)="openDialog('0ms', '0ms')">Donate Now</button>-->
+</form>
+

@@ -1,0 +1,350 @@
+
+.booking-message {
+    font-size: 20px;
+    color: #2d7a2d;
+    background: #e8f5e9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2d7a2d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+// .services-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 20px; /* Adjust spacing between items */
+// }
+
+// .service-item {
+//     flex: 1; /* Allows items to expand equally */
+//     min-width: 300px; /* Ensures responsiveness */
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     background-color: #f8f8f8;
+//     padding: 20px;
+//     border-radius: 8px;
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+// }
+
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Service Item */
+.service-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #1e88e5;
+}
+
+.service-item h3 i {
+    margin-right: 10px;
+    color: #0d47a1;
+}
+
+/* List Style */
+.service-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.service-item ul li::before {
+    content: "✔";
+    color: #1e88e5;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        text-align: center;
+    }
+
+    .service-item h3 {
+        justify-content: center;
+    }
+}
+
+.about-us {
+    padding: 80px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-text ul li::before {
+    content: "\2714";
+    color: #1e88e5;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+
+/* Overview Section */
+.overview {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title & Introduction */
+.overview h2 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.overview .intro {
+    text-align: center;
+    // font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Features Section */
+.features-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.app-feature {
+    flex: 1;
+    min-width: 300px;
+    background: #e9f5ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-feature:hover {
+    transform: translateY(-5px);
+}
+
+.app-feature h3 {
+    color: #007BFF;
+    text-align: center;
+}
+
+.app-feature ul {
+    list-style: none;
+    padding: 0;
+}
+
+.app-feature ul li {
+    padding: 8px;
+    font-size: 1rem;
+    border-left: 4px solid #007BFF;
+    margin: 5px 0;
+    padding-left: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Subscription Section */
+.subscription {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff3cd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subscription h3 {
+    text-align: center;
+    color: #d39e00;
+}
+
+.subscription-group {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-group h4 {
+    color: #d39e00;
+}
+
+.subscription-group ol {
+    padding-left: 20px;
+}
+
+.subscription-group ol li {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+    }
+
+    .app-feature {
+        min-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #0056b3;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.subscription {
+    margin-top: 20px;
+}
+

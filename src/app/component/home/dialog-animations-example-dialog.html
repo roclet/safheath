@@ -1,0 +1,90 @@
+<h2 mat-dialog-title>Donation process 
+</h2>
+<mat-dialog-content class="mat-typography">
+  <!--<h3>Develop across all platforms</h3>-->
+  <div class="row">
+    <div class="col-sm-6">
+      <button type="button" class="donate-btn"  style="
+    font-size: 14px;
+    color: #fff;
+    background-color: #43ba7f;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #368d63;
+    }
+  ">Direct (details to facilitate transaction)</button>
+
+
+
+    <div class="bank-details"  >
+    <h2>Bank Account Details</h2>
+    <p><span class="highlight">Bank Name:</span> FNB (First National Bank)</p>
+    <p><span class="highlight">Account Holder:</span> Together The Best Life (PTY) LTD</p>
+    <p><span class="highlight">Type of Account:</span> Golden Business Account</p>
+    <p><span class="highlight">Account Number:</span> 63098162068</p>
+    <p><span class="highlight">Branch Code:</span> 201909</p>
+    <p><span class="highlight">Branch Name:</span> Woodstock</p>
+    <p><span class="highlight">Swift Code:</span> FIRNZAJJ</p>
+</div>
+    </div>
+    <div class="col-sm-6">
+      
+
+<form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
+<input required type="hidden" name="cmd" value="_paynow">
+<input required type="hidden" name="receiver" pattern="[0-9]" value="15166217">
+<input required type="hidden" name="amount" value="100">
+<input required type="hidden" name="item_name" maxlength="255" value="Test">
+<input required type="hidden" name="subscription_type" pattern="1"value="1">
+<input type="hidden" name="recurring_amount" value="100">
+<input required type="hidden" name="cycles" pattern="[0-9]" value="0">
+<input required type="hidden" name="frequency" pattern="[0-9]" value="3">
+<table>
+<tr>
+<td colspan=2 align=center>
+   <button type="submit" class="orange-button" style="
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff511a;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #368d63;
+    }
+  " >Payfast (once or recurring)</button>
+</td>
+</tr>
+</table>
+
+
+
+</form>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
+
+
+
+
+

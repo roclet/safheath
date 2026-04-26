@@ -1,0 +1,107 @@
+.containerTT {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: auto;
+    margin-top: 50px;
+}
+h1, h2 {
+    color: #2c3e50;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ul {
+    padding-left: 20px;
+}
+
+
+::ng-deep mat-expansion-panel-header {
+    //background-color: #0077b6; // Change background color to blue
+    background-color: #212741; // Darker blue
+    color: white; // Set text color to white
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  ::ng-deep mat-expansion-panel-header:hover {
+    background-color: #005b8f; // Darker blue on hover
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+  }
+  
+  ::ng-deep mat-panel-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  ::ng-deep mat-expansion-panel {
+    border: 1px solid #212741;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+
+  .welcome-message {
+    background-color: #f0f9ff; /* Light blue background */
+    border-left: 5px solid #0077b6; /* Blue left border */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .welcome-message h2 {
+    color: #005b8f;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-message p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #005b8f;
+}
+h2 {
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+.contact {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.contact a {
+    color: #0077b6;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+  

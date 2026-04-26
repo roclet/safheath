@@ -1,0 +1,214 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+
+/* Overview Section */
+.overview {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title & Introduction */
+.overview h2 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.overview .intro {
+    text-align: center;
+    // font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.example-action-buttons {
+    padding-bottom: 20px;
+  }
+  
+  .example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
+
+  .containerTT {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: auto;
+    margin-top: 50px;
+}
+h1, h2 {
+    color: #2c3e50;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ul {
+    padding-left: 20px;
+}
+
+.disclaimer-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .copyright-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #1e73be;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .paia-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  ol {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  .terms-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #1e73be;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+  ::ng-deep mat-expansion-panel-header {
+    //background-color: #0077b6; // Change background color to blue
+    background-color: #212741; // Darker blue
+    color: white; // Set text color to white
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  ::ng-deep mat-expansion-panel-header:hover {
+    background-color: #005b8f; // Darker blue on hover
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+  }
+  
+  ::ng-deep mat-panel-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  ::ng-deep mat-expansion-panel {
+    border: 1px solid #212741;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
